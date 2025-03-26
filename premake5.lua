@@ -49,9 +49,11 @@ project "imgui"
     --     includedirs { "backends" }
 
     filter "configurations:Debug"
+        defines "_DEBUG"
         runtime "Debug"
         symbols "on"
 
     filter "configurations:Release"
+        defines "NDEBUG"
         runtime "Release"
         optimize "on"
