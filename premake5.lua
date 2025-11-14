@@ -48,7 +48,12 @@ project "imgui"
             "backends/imgui_impl_opengl3.cpp",
             "backends/imgui_impl_opengl3.h"
         }
-        includedirs { "backends" }
+
+        includedirs 
+        { 
+            "backends" ,
+            "/usr/include/SDL2"
+        }
 
     filter "configurations:Debug"
         defines "_DEBUG"
